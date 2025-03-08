@@ -1,17 +1,14 @@
-/* Import "Amatic SC" for headings (as in the mockups) */
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
 
 :root {
-  --primary-color: #1B98E0;     /* Header / brand color */
-  --secondary-color: #59c3c3;   /* Buttons / accent color */
+  --primary-color: #1B98E0;    
+  --secondary-color: #59c3c3;   
   --text-dark: #333;
   --text-light: #ebebeb;
+  --primary-font: Arial, Helvetica, sans-serif; 
+  --secondary-font: "Amatic SC", cursive;       
 
-  --primary-font: Arial, Helvetica, sans-serif; /* Body */
-  --secondary-font: "Amatic SC", cursive;       /* Headings */
 }
-
-/* RESET / BASE */
 * {
   margin: 0;
   padding: 0;
@@ -25,13 +22,11 @@ body {
   line-height: 1.5;
 }
 
-/* Make images responsive */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* Hide visually but keep accessible for screen readers */
 .sr-only {
   position: absolute !important;
   width: 1px;
@@ -44,7 +39,6 @@ img {
   border: 0;
 }
 
-/* HEADER */
 header {  
   align-items: center;
   gap: 1rem;
@@ -65,7 +59,7 @@ header {
 }
 
 .logo-title img {
-  width: 40px; /* adjust as needed to match the mockup */
+  width: 40px; 
   height: auto;
 }
 
@@ -78,7 +72,7 @@ header {
 .search-form {
   display: flex;
   align-items: center;
-  gap: 1rem; /* Adjust the gap as needed */
+  gap: 1rem; 
   width: 100%;
 }
 
@@ -86,7 +80,7 @@ header {
   padding: 0.5rem;
   border: 1px solid #ddd;
   border-radius: 4px;
-  flex-grow: 1; /* Allow the input to take up available space */
+  flex-grow: 1;
 }
 
 .search-form button {
@@ -111,11 +105,10 @@ header {
 }
 
 .search-button img {
-  width: 20px; /* Adjust the size as needed */
-  height: 20px; /* Adjust the size as needed */
+  width: 20px; 
+  height: 20px; 
 }
 
-/* MAIN */
 main {
   padding: 1rem;
 }
@@ -133,12 +126,11 @@ main {
   text-align: center;
 }
 
-/* filepath: c:\Users\willi\Documents\wdd131\recipes\recipes.css */
 .divider {
     border: 0;
     height: 1px;
-    background: #ddd; /* Adjust the color as needed */
-    margin: 1rem 0; /* Adjust the margin as needed */
+    background: #ddd; 
+    margin: 1rem 0; 
   }
 
 .recipe-img {
@@ -170,17 +162,15 @@ main {
   margin: 0.25rem 0;
 }
 
-/* Star rating */
 .rating {
   display: inline-block;
 }
 
 .icon-star, .icon-star-empty {
-  color: #000000; /* gold color */
+  color: #000000; 
   font-size: 1.5rem;
 }
 
-/* Hide the recipe description on small screens */
 .recipe-description {
   display: none;
   margin-top: 0.5rem;
@@ -189,7 +179,6 @@ main {
   max-width: 90%;
 }
 
-/* FOOTER */
 footer {
   display: flex;
   background-color: white;
@@ -199,11 +188,10 @@ footer {
 }
 
 .attribution {
-  font-size: 0.6em; /* smaller text for the attribution link */
+  font-size: 0.6em; 
   margin-bottom: 0.5rem;
 }
 
-/* Social icons container */
 .social {
   display: flex;
   justify-content: center;
@@ -211,22 +199,18 @@ footer {
 }
 
 .social img {
-    width: 35px; /* Increase the size of the icons */
-    height: 35px; /* Increase the size of the icons */
+    width: 35px;
+    height: 35px; 
     fill: black;
-    border: 2px solid #121212a1; /* Border size */
+    border: 2px solid #121212a1; 
     border-radius: 4px;
-    padding: 2px; /* Increase padding to create more space between border and icon */
+    padding: 2px; 
   }
 
 .search img {
     position: absolute;
-     /* adjust as needed to match the mockup */
   }
   
-/* MEDIA QUERIES */
-
-/* First breakpoint ~600px */
 @media screen and (min-width: 600px) {
   header {
     flex-direction: row;
@@ -242,13 +226,11 @@ footer {
     align-items: flex-start;
   }
 
-  /* Show description at this size */
   .recipe-description {
     display: block;
   }
 }
 
-/* Second breakpoint ~960px */
 @media screen and (min-width: 960px) {
   body {
     max-width: 960px;
