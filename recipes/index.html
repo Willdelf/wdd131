@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Recipe Book</title>
+  <meta name="description" content="A simple and delicious recipe site.">
+  <meta name="author" content="Your Name">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Social Media Meta (Open Graph + Twitter) -->
+  <meta property="og:title" content="Recipe Book">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="A simple and delicious recipe site.">
+  <!-- Replace this with the actual URL to your image or your GitHub Pages URL -->
+  <meta property="og:image" content="https://willdelf.github.io/recipes/images/apple.jpg">
+  <meta property="og:url" content="https://willdelf.github.io/recipes/index.html">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon (Optional) -->
+  <!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
+
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="recipes.css">
+
+  <!-- Main JavaScript (which imports recipes.mjs) -->
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="logo-title">
+      <img src="images/cook-book-svgrepo-com.svg" alt="Recipe Book logo">
+      <h1>RecipeBook</h1>
+    </div>
+    <form class="search-form" action="#" method="get">
+      <label for="search" class="sr-only">Find a recipe</label>
+      <input type="search" id="search" name="search" placeholder="Find a recipe">
+      <button type="submit" class="search-button">
+        <img src="images/loop.png" alt="Loop logo">
+      </button>
+    </form>
+  </header>
+
+  <hr class="divider">
+
+  <main>
+    <!-- Example single recipe card (static). 
+         You can load more dynamically via main.js if desired. -->
+    <section class="recipe-card">
+      <img src="images/apple.jpg" alt="Apple Crisp" class="recipe-img">
+
+      <div class="recipe-info">
+        <span class="recipe-type">dessert</span>
+        <h2>Apple Crisp</h2>
+
+        <!-- Accessible star rating -->
+        <span
+          class="rating"
+          role="img"
+          aria-label="Rating: 4 out of 5 stars"
+        >
+          <span aria-hidden="true" class="icon-star">⭐</span>
+          <span aria-hidden="true" class="icon-star">⭐</span>
+          <span aria-hidden="true" class="icon-star">⭐</span>
+          <span aria-hidden="true" class="icon-star">⭐</span>
+          <span aria-hidden="true" class="icon-star-empty">☆</span>
+        </span>
+
+        <!-- Description hidden on small screens, shown on larger -->
+        <p class="recipe-description">
+          This apple crisp recipe is a simple yet delicious fall dessert 
+          that’s great served warm with vanilla ice cream.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Attribution for the recipe icons -->
+    <p class="attribution">
+      <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">
+        Recipe icons created by Freepik - Flaticon
+      </a>
+    </p>
+
+    <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates -->
+    <div class="social">
+      <a href="#"><img src="images/instagram-svgrepo-com.svg" alt="instagram icon"></a>
+      <a href="#"><img src="images/youtube-168-svgrepo-com.svg" alt="youtube icon"></a>
+      <a href="#"><img src="images/pinterest-180-svgrepo-com.svg" alt="pinterest icon"></a>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+
